@@ -1,159 +1,226 @@
-# Awesome-Schema-Migration-Platform
+# 🚀 Awesome-Schema-Migration-Platform
 
-## Top Schema Migration Platforms
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Schema Migration Platform &amp; Database DevOps Banner" width="100%" />
+</p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Schema-Migration-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Schema-Migration-Platform?style=flat-square&logo=github&color=blue" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Schema-Migration-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Schema-Migration-Platform?style=flat-square&logo=github&color=blue" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Schema-Migration-Platform/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+## 🎯 Top Schema Migration Platforms &amp; Database DevOps
 
-**A comprehensive ecosystem of database schema migration, schema-as-code, database branching, change automation and database DevOps platforms**
+**A comprehensive, production-ready ecosystem of database schema migration tools, declarative schema-as-code frameworks, database branching engines, zero-downtime online DDL tools, and database change governance platforms.**
 
+*Open-source-first reference covering versioned migrations, declarative schema management, ORM migrations, schema diffing, zero-downtime changes, branching, and database change governance.*
 
+**Last updated: September 2026** 📅
 
-*Open-source-first reference covering versioned migrations, declarative schema management, ORM migrations, schema diffing, zero-downtime changes, branching and database change governance.*
+Database schema migration platforms help engineering teams safely evolve database structures across development, testing, staging, and production environments. They provide mechanisms for versioning schema changes, generating or applying DDL, tracking migration history, detecting drift, reviewing changes, automating deployments, and creating isolated database branches.
 
+Notable platforms include **Liquibase, Flyway, Bytebase, Atlas, Prisma Migrate, Alembic, Neon Branching, PlanetScale Branching, DBmaestro, and Redgate SQL Change Automation**.
 
+This reference focuses on **open-source alternatives and building blocks**, including migration CLIs, declarative schema tools, ORM-integrated migration systems, schema-diff engines, database branching technologies, online schema-change tools, and database DevOps platforms.
 
-**Last updated: September 2026**
-
-
-
-Database schema migration platforms help engineering teams safely evolve database structures across development, testing, staging and production environments. They provide mechanisms for versioning schema changes, generating or applying DDL, tracking migration history, detecting drift, reviewing changes, automating deployments and, increasingly, creating isolated database branches.
-
-
-
-Examples include **Liquibase, Flyway, Bytebase, Atlas, Prisma Migrate, Alembic, Neon Branching, PlanetScale Branching, DBmaestro and Redgate SQL Change Automation**.
-
-
-
-This README focuses particularly on **open-source alternatives and building blocks**, including migration CLIs, declarative schema tools, ORM-integrated migration systems, schema-diff engines, database branching technologies, online schema-change tools and database DevOps platforms.
-
-
-
-## Open-source emphasis
-
-
+## ⚖️ Open-source emphasis
 
 Open-source projects are divided into two groups:
 
+1. 🛠️ **Direct alternatives** — tools that can independently perform database migrations, schema management, or database change deployment.
+2. 🧱 **Building blocks** — projects that solve an important part of the problem such as schema diffing, online DDL, branching, database versioning, CI/CD, or database governance.
 
-
-1. **Direct alternatives** — tools that can independently perform database migrations, schema management or database change deployment.
-
-2. **Building blocks** — projects that solve an important part of the problem such as schema diffing, online DDL, branching, database versioning, CI/CD or database governance.
-
-
-
-> **Important:** An open-source migration engine is not automatically equivalent to a commercial database DevOps platform. Commercial platforms may combine migration execution with approval workflows, drift detection, audit trails, RBAC, deployment gates, database branching, risk analysis and enterprise support.
-
-
+> **💡 Important:** An open-source migration engine is not automatically equivalent to a commercial database DevOps platform. Commercial platforms may combine migration execution with approval workflows, drift detection, audit trails, RBAC, deployment gates, database branching, risk analysis, and enterprise support.
 
 Contributions and corrections are welcome.
 
+---
 
+## 📑 Table of Contents
+
+* [☁️ SaaS/Hosted Platforms](#-saashosted-platforms)
+* [🛠️ Open-Source Database Migration Projects](#️-open-source-database-migration-projects)
+* [📋 Open-Source Declarative Schema Tools](#-open-source-declarative-schema-tools)
+* [🔗 ORM-Integrated Migration Frameworks](#-orm-integrated-migration-frameworks)
+* [📊 Schema Diff & Schema-as-Code Tools](#-schema-diff--schema-as-code-tools)
+* [🛡️ Zero-Downtime / Online Schema Change](#️-zero-downtime--online-schema-change)
+* [🌿 Database Branching & Database-as-Code](#-database-branching--database-as-code)
+* [🏛️ Database DevOps & Governance](#️-database-devops--governance)
+* [📦 Additional Strong Open-Source Options](#-additional-strong-open-source-options)
+* [🔄 Commercial Platform → Open-Source Equivalents](#-commercial-platform--open-source-equivalents)
+* [🏗️ Frameworks for Building Custom Schema Migration Platforms](#️-frameworks-for-building-custom-schema-migration-platforms)
+* [🏛️ Reference Architecture](#️-reference-architecture)
+* [🔄 Typical Migration Workflow](#-typical-migration-workflow)
+* [📋 Declarative Schema Workflow](#-declarative-schema-workflow)
+* [🌿 Database Branching Workflow](#-database-branching-workflow)
+* [⚡ Expand / Contract Migration Pattern](#-expand--contract-migration-pattern)
+* [📊 Capability Matrix](#-capability-matrix)
+* [💡 Recommended Open-Source Stacks](#-recommended-open-source-stacks)
+* [📁 Example Repository Structure](#-example-repository-structure)
+* [🚀 Example CI/CD Pipeline](#-example-cicd-pipeline)
+* [⚠️ Destructive Migration Detection](#️-destructive-migration-detection)
+* [🗂️ Migration Metadata Model](#️-migration-metadata-model)
+* [🛡️ Migration Safety Model](#️-migration-safety-model)
+* [🧩 What Is Still Difficult to Reproduce in Open Source?](#-what-is-still-difficult-to-reproduce-in-open-source)
+* [🌟 Why Open Source Is Interesting](#-why-open-source-is-interesting)
+* [🎯 Best Open-Source Projects by Use Case](#-best-open-source-projects-by-use-case)
+* [🏆 Recommended Open-Source Shortlist](#-recommended-open-source-shortlist)
+* [💎 A Practical Fully Open-Source Reference Stack](#-a-practical-fully-open-source-reference-stack)
+* [🏁 Conclusion](#-conclusion)
+* [📈 Star History](#-star-history)
+* [🤝 How to Contribute](#-how-to-contribute)
+* [📜 Disclaimer](#-disclaimer)
 
 ---
 
+# ☁️ SaaS/Hosted Platforms
 
+> **📊 Estimated Sector Market Size & Structure**: The global database schema migration, database change management, and database DevOps market is estimated at **$12.5 Billion to $16.0 Billion by 2026** (expanding at an estimated **24% - 28% CAGR**). The sector is **moderately to highly fragmented** rather than winner-take-all, driven by heterogeneous database engines (PostgreSQL, MySQL, SQL Server, Oracle, CockroachDB, NoSQL), differing architectural paradigms (declarative schema-as-code vs. versioned migration scripts vs. database branching vs. ORM-embedded migrations), and diverse enterprise security, governance, and audit compliance requirements.
 
-## Table of Contents
+These are commercial, hosted, or enterprise-oriented database schema migration and database change management platforms, ranked in descending order of company size (valuation / ARR):
 
-
-
-* [SaaS/Hosted Platforms](#saashosted-platforms)
-
-* [Open-Source Database Migration Projects](#open-source-database-migration-projects)
-
-* [Open-Source Declarative Schema Tools](#open-source-declarative-schema-tools)
-
-* [ORM-Integrated Migration Frameworks](#orm-integrated-migration-frameworks)
-
-* [Schema Diff & Schema-as-Code Tools](#schema-diff--schema-as-code-tools)
-
-* [Zero-Downtime / Online Schema Change](#zero-downtime--online-schema-change)
-
-* [Database Branching & Database-as-Code](#database-branching--database-as-code)
-
-* [Database DevOps & Governance](#database-devops--governance)
-
-* [Additional Strong Open-Source Options](#additional-strong-open-source-options)
-
-* [Commercial Platform → Open-Source Equivalents](#commercial-platform--open-source-equivalents)
-
-* [Frameworks for Building Custom Schema Migration Platforms](#frameworks-for-building-custom-schema-migration-platforms)
-
-* [Reference Architecture](#reference-architecture)
-
-* [Typical Migration Workflow](#typical-migration-workflow)
-
-* [Declarative Schema Workflow](#declarative-schema-workflow)
-
-* [Database Branching Workflow](#database-branching-workflow)
-
-* [Capability Matrix](#capability-matrix)
-
-* [Recommended Open-Source Stacks](#recommended-open-source-stacks)
-
-* [What Is Still Difficult to Reproduce in Open Source?](#what-is-still-difficult-to-reproduce-in-open-source)
-
-* [Why Open Source Is Interesting](#why-open-source-is-interesting)
-
-* [How to Contribute](#how-to-contribute)
-
-* [Disclaimer](#disclaimer)
-
-
+| Platform | Primary Model | Main Strength | Company Size (Valuation / Revenue) | Pricing (Starting Tier) | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [Harness Database DevOps](https://www.harness.io/products/database-devops) | Database DevOps | CI/CD database deployment & pipeline governance | $3.70B (Valuation, Series D) | $50/user/month (or $100/service/month in Harness Continuous Delivery Essentials) | Free forever plan with 1,000 Harness Subscription Units (HSUs)/month, up to 5 users, and pipeline deployment support; 14-day trial for Enterprise modules |
+| [Delphix](https://www.delphix.com/) | Data virtualization | Environment & test data branching | ~$2.50B (Enterprise valuation via Perforce) | $0.48/hour (~$350/month) on AWS Marketplace for Delphix Continuous Data Engine | 30-day evaluation trial / proof of concept upon request (limited to 1 virtual data engine and 1 managed source database) |
+| [Supabase](https://supabase.com/) | Database branching + migrations | Managed Postgres with branching, CLI migrations & preview environments | $1.50B (Valuation, Series C) | $25/month (Pro plan; includes 8 GB disk, 100k MAUs, 250 GB egress, daily backups) | Free forever plan including 2 active projects, 500 MB database storage, 1 GB file storage, 200 concurrent connections, and 50,000 monthly active users |
+| [PlanetScale](https://planetscale.com/) | Database branching | MySQL/Vitess branching and deploy requests | $1.20B (Valuation, Series C) | $5/month (Development database) or $39/month (Scaler tier, includes 10 GB storage & 1B row reads) | 14-day free trial with full access to branching, deploy requests, schema reverts, and 10 GB storage (no credit card required during trial) |
+| [Neon](https://neon.tech/) | Database branching | Serverless PostgreSQL branching | $1.00B (Valuation, Unicorn) | $0.106/CU-hour + $0.35/GB-month (Launch tier; typical starting spend ~$19/month, $0 minimum commitment) | Free forever plan with 100 projects, 0.5 GB storage per project, 100 CU-hours/month per project, compute up to 2 CU (8 GB RAM), and instant database branching |
+| [Redgate Flyway](https://documentation.red-gate.com/flyway) | Migration automation | Enterprise migration workflows & compliance | ~$1.00B+ (Valuation via Hg Capital; ~$150M+ ARR) | $49.58/user/month ($595/user/year) for Teams; Enterprise starting at ~$3,750/target/year | Free forever for Flyway Community; 28-day free trial for Flyway Enterprise with auto-rollback, static code analysis, and artifact generation |
+| [Redgate SQL Change Automation](https://www.red-gate.com/products/software-development/sql-change-automation/) | Database DevOps | SQL Server deployment automation | ~$1.00B+ (Included under Redgate Software portfolio) | $298.75/user/month ($3,585/user/year via Redgate SQL Toolbelt; transitioned to Flyway Enterprise starting at ~$3,750/target/year) | 28-day free trial with full automated SQL Server migrations, Visual Studio integration, and CI/CD release gate testing |
+| [Octopus Deploy](https://octopus.com/) | Deployment automation | Database deployment pipelines & runbooks | $650M (Valuation via Insight Partners; ~$80M ARR) | $173.33/month ($2,080/year) for Octopus Server; $360.83/month ($4,330/year) for Octopus Cloud (up to 25 targets) | Free forever plan for Cloud and Server with up to 10 deployment targets/machines, 10 projects, 10 users, 1 space, and 5 concurrent tasks; 30-day free trial for Enterprise |
+| [Liquibase](https://www.liquibase.com/) | Versioned / declarative | Enterprise database change management | ~$450M (Valuation; ~$40M ARR) | $25/target/month ($300/target/year, billed annually, minimum 5 targets = $1,500/year for Liquibase Pro) | Free forever for Liquibase Community (open-source CLI, unlimited migrations, rollback scripts); 30-day free trial for Liquibase Pro with targeted rollbacks, quality checks, and drift detection |
+| [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate) | ORM-integrated | TypeScript/Prisma workflow & platform metrics | ~$400M (Valuation, Series B) | $10/month (Starter tier; includes 5M requests, 1M operations, 10 GB storage) | Free forever for Prisma ORM CLI (unlimited local migrations); Prisma Data Platform Free tier includes 1M requests/month, 200k operations/month, 360 GB-hours memory, and 10 GB egress |
+| [Bytebase](https://www.bytebase.com/) | Governance + GitOps | SQL review, approval, audit and deployment | ~$120M (Valuation, Series A) | $20/user/month (Pro plan) | Free forever for up to 20 users and 10 database instances (includes GitOps schema management, declarative migrations, schema compare & sync) |
+| [Percona Toolkit](https://www.percona.com/software/mysql-tools/percona-toolkit) | Database operations | Online schema-change tooling | ~$80M (Annual Revenue; bootstrapped open-source leader) | $1,250/month ($15,000/year for standard 1–10 server enterprise support subscription; software is open-source) | 100% Free forever for all CLI tools (pt-online-schema-change, pt-summary) and Percona Monitoring and Management (PMM) under GPLv2 (unlimited instances and migrations) |
+| [Atlas Cloud](https://atlasgo.io/) | Declarative + versioned | Schema-as-code and migration planning | ~$60M (Valuation, Series A) | $9/user/month (Pro seat) + $59/month per CI/CD project (includes 2 target databases) | Free forever for Community tier (1 project, basic inspection & diffing, ORM integration); 14-day free trial for Pro (no credit card required) |
+| [Xata](https://xata.io/) | Database branching + schema management | Serverless PostgreSQL with instant zero-downtime branching & migrations | ~$50M (Valuation, Series A) | $20/month (Pro plan; includes 15 GB storage, 50 concurrent requests, unlimited branch creations) | Free forever plan with 15 GB storage, 750,000 operations/month, 10 concurrent requests, and up to 15 branches per database |
+| [Dolt](https://www.dolthub.com/) | Version-controlled database | Git-like database branching/versioning | ~$35M (Valuation; 406 Ventures) | $50/month (~$0.07/hour for entry-level Hosted Dolt instance; $50/month for DoltHub Pro) | Free forever for Dolt CLI; DoltHub includes unlimited free public repositories and 1 GB free storage for private repositories |
+| [DBmaestro](https://www.dbmaestro.com/) | Database DevOps | Change automation and governance | ~$25M (Valuation; ~$5M-$10M ARR) | $41/user/month (~$495/user/year, billed annually) | 14-day free trial with full database release automation, drift tracking, and rollback policies for up to 2 pipeline environments |
+| [Skeema](https://www.skeema.io/) | Declarative | MySQL/MariaDB schema management | ~$1.5M (Annual Revenue; bootstrapped micro-ISV) | $54.08/month ($649/year) for Skeema Cloud Linter for GitHub; Skeema Premium CLI starting at $99/year (Plus tier) | Free forever for Skeema Community CLI (Apache 2.0, unlimited schemas/tables/routines); 30-day free trial for Cloud Linter and Premium CLI features |
+| [Liquibase Hub](https://www.liquibase.com/products/database-devops) | Governance | Centralized database change visibility | Sunset / Deprecated (Folded into Liquibase Pro) | Sunset/Integrated into Liquibase Pro starting at $25/target/month ($1,500/year minimum) | Previously offered 2 free database targets; capabilities transitioned into Liquibase Community (Free forever open-source) and Liquibase Pro (30-day free trial) |
+| [Alembic](https://alembic.sqlalchemy.org/) | ORM-integrated | Python / SQLAlchemy migrations | $0 (Open-Source Non-Profit Foundation) | $0/month (100% Free Open Source under MIT license; no commercial paid edition) | 100% Free forever without limits (MIT license, unlimited databases, environments, developers, and migrations) |
 
 ---
 
+# 🛠️ Open-Source Database Migration Projects
+
+These are the strongest open-source projects for the core migration problem: **apply database changes in a deterministic, repeatable, and version-controlled manner**, sorted descending by GitHub star count:
+
+## 1. golang-migrate [![GitHub stars](https://img.shields.io/github/stars/golang-migrate/migrate?style=social&color=white)](https://github.com/golang-migrate/migrate/stargazers)
+
+[GitHub](https://github.com/golang-migrate/migrate)
 
 
-# SaaS/Hosted Platforms
+
+A lightweight Go migration library and CLI.
 
 
 
-These are commercial, hosted or enterprise-oriented database schema migration / database change management platforms.
+Features include:
 
 
 
-| Platform | Primary Model | Main Strength | Pricing (Starting Tier) | Free Tier / Trial Limits |
-| -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------------------------------------------ | ------------------------ | ------------------------ |
-| [Bytebase](https://www.bytebase.com/) | Governance + GitOps | SQL review, approval, audit and deployment | $20/user/month (Pro plan) | Free forever for up to 20 users and 10 database instances (includes GitOps schema management, declarative migrations, schema compare & sync) |
-| [Atlas Cloud](https://atlasgo.io/) | Declarative + versioned | Schema-as-code and migration planning | $9/user/month (Pro seat) + $59/month per CI/CD project (includes 2 target databases) | Free forever for Community tier (1 project, basic inspection & diffing, ORM integration); 14-day free trial for Pro (no credit card required) |
-| [Neon](https://neon.tech/) | Database branching | Serverless PostgreSQL branching | $0.106/CU-hour + $0.35/GB-month (Launch tier; typical starting spend ~$19/month, $0 minimum commitment) | Free forever plan with 100 projects, 0.5 GB storage per project, 100 CU-hours/month per project, compute up to 2 CU (8 GB RAM), and instant database branching |
-| [PlanetScale](https://planetscale.com/) | Database branching | MySQL/Vitess branching and deploy requests | $5/month (Development database) or $39/month (Scaler tier, includes 10 GB storage & 1B row reads) | 14-day free trial with full access to branching, deploy requests, schema reverts, and 10 GB storage (no credit card required during trial) |
-| [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate) | ORM-integrated | TypeScript/Prisma workflow & platform metrics | $10/month (Starter tier; includes 5M requests, 1M operations, 10 GB storage) | Free forever for Prisma ORM CLI (unlimited local migrations); Prisma Data Platform Free tier includes 1M requests/month, 200k operations/month, 360 GB-hours memory, and 10 GB egress |
-| [Liquibase](https://www.liquibase.com/) | Versioned / declarative | Enterprise database change management | $25/target/month ($300/target/year, billed annually, minimum 5 targets = $1,500/year for Liquibase Pro) | Free forever for Liquibase Community (open-source CLI, unlimited migrations, rollback scripts); 30-day free trial for Liquibase Pro with targeted rollbacks, quality checks, and drift detection |
-| [Flyway](https://www.red-gate.com/hub/product-learning/flyway) | Versioned migrations | Simple SQL-first migrations | $49.58/user/month ($595/user/year, billed annually) for Flyway Teams; ~$3,750/target/year for Enterprise | Free forever for Flyway Community (Apache 2.0 open-source CLI/Maven/Gradle, unlimited migrations); 28-day free trial for Flyway Enterprise with full multi-database governance |
-| [Redgate Flyway](https://documentation.red-gate.com/flyway) | Migration automation | Enterprise migration workflows | $49.58/user/month ($595/user/year) for Teams; Enterprise starting at ~$3,750/target/year | Free forever for Flyway Community; 28-day free trial for Flyway Enterprise with auto-rollback, static code analysis, and artifact generation |
-| [Octopus Deploy](https://octopus.com/) | Deployment automation | Database deployment pipelines & runbooks | $173.33/month ($2,080/year) for Octopus Server; $360.83/month ($4,330/year) for Octopus Cloud (up to 25 targets) | Free forever plan for Cloud and Server with up to 10 deployment targets/machines, 10 projects, 10 users, 1 space, and 5 concurrent tasks; 30-day free trial for Enterprise |
-| [Skeema](https://www.skeema.io/) | Declarative | MySQL/MariaDB schema management | $54.08/month ($649/year) for Skeema Cloud Linter for GitHub; Skeema Premium CLI starting at $99/year (Plus tier) | Free forever for Skeema Community CLI (Apache 2.0, unlimited schemas/tables/routines); 30-day free trial for Cloud Linter and Premium CLI features |
-| [Dolt](https://www.dolthub.com/) | Version-controlled database | Git-like database branching/versioning | $50/month (~$0.07/hour for entry-level Hosted Dolt instance; $50/month for DoltHub Pro) | Free forever for Dolt CLI; DoltHub includes unlimited free public repositories and 1 GB free storage for private repositories |
-| [DBmaestro](https://www.dbmaestro.com/) | Database DevOps | Change automation and governance | $41/user/month (~$495/user/year, billed annually) | 14-day free trial with full database release automation, drift tracking, and rollback policies for up to 2 pipeline environments |
-| [Redgate SQL Change Automation](https://www.red-gate.com/products/software-development/sql-change-automation/) | Database DevOps | SQL Server deployment automation | $298.75/user/month ($3,585/user/year via Redgate SQL Toolbelt; transitioned to Flyway Enterprise starting at ~$3,750/target/year) | 28-day free trial with full automated SQL Server migrations, Visual Studio integration, and CI/CD release gate testing |
-| [Delphix](https://www.delphix.com/) | Data virtualization | Environment/data branching | $0.48/hour (~$350/month) on AWS Marketplace for Delphix Continuous Data Engine | 30-day evaluation trial / proof of concept upon request (limited to 1 virtual data engine and 1 managed source database) |
-| [Harness Database DevOps](https://www.harness.io/products/database-devops) | Database DevOps | CI/CD database deployment | $50/user/month (or $100/service/month in Harness Continuous Delivery Essentials) | Free forever plan with 1,000 Harness Subscription Units (HSUs)/month, up to 5 users, and pipeline deployment support; 14-day trial for Enterprise modules |
-| [Liquibase Hub](https://www.liquibase.com/products/database-devops) | Governance | Centralized database change visibility | Sunset/Integrated into Liquibase Pro starting at $25/target/month ($1,500/year minimum) | Previously offered 2 free database targets; capabilities transitioned into Liquibase Community (Free forever open-source) and Liquibase Pro (30-day free trial) |
-| [Percona Toolkit](https://www.percona.com/software/mysql-tools/percona-toolkit) | Database operations | Online schema-change tooling | $1,250/month ($15,000/year for standard 1–10 server enterprise support subscription; software is open-source) | 100% Free forever for all CLI tools (pt-online-schema-change, pt-summary) and Percona Monitoring and Management (PMM) under GPLv2 (unlimited instances and migrations) |
-| [Alembic](https://alembic.sqlalchemy.org/) | ORM-integrated | Python / SQLAlchemy migrations | $0/month (100% Free Open Source under MIT license; no commercial paid edition) | 100% Free forever without limits (MIT license, unlimited databases, environments, developers, and migrations) |
-| [Supabase](https://supabase.com/) | Database branching + migrations | Managed Postgres with branching, CLI migrations & preview environments | $25/month (Pro plan; includes 8 GB disk, 100k MAUs, 250 GB egress, daily backups) | Free forever plan including 2 active projects, 500 MB database storage, 1 GB file storage, 200 concurrent connections, and 50,000 monthly active users |
-| [Xata](https://xata.io/) | Database branching + schema management | Serverless PostgreSQL with instant zero-downtime branching & migrations | $20/month (Pro plan; includes 15 GB storage, 50 concurrent requests, unlimited branch creations) | Free forever plan with 15 GB storage, 750,000 operations/month, 10 concurrent requests, and up to 15 branches per database |
+* versioned migrations
+
+* `.up.sql` / `.down.sql`
+
+* CLI
+
+* Go library
+
+* many database drivers
+
+* filesystem migrations
+
+* GitHub migrations
+
+* S3/GCS sources
 
 
+
+It is an excellent building block for custom migration infrastructure.
 
 ---
 
+## 2. Bytebase [![GitHub stars](https://img.shields.io/github/stars/bytebase/bytebase?style=social&color=white)](https://github.com/bytebase/bytebase/stargazers)
 
-
-# Open-Source Database Migration Projects
-
-
-
-These are the strongest open-source projects for the core migration problem: **apply database changes in a deterministic, repeatable and version-controlled manner**.
+[GitHub](https://github.com/bytebase/bytebase)
 
 
 
-## 1. Flyway Community
+Bytebase is particularly interesting because it goes beyond a simple migration CLI.
 
 
+
+It combines:
+
+
+
+* SQL review
+
+* approval workflows
+
+* database change management
+
+* GitOps
+
+* deployment
+
+* audit
+
+* environment management
+
+* database governance
+
+
+
+This makes it one of the closest open-source projects to a broader **database DevOps platform** rather than merely a migration library.
+
+---
+
+## 3. goose [![GitHub stars](https://img.shields.io/github/stars/pressly/goose?style=social&color=white)](https://github.com/pressly/goose/stargazers)
+
+[GitHub](https://github.com/pressly/goose)
+
+
+
+Goose supports both:
+
+
+
+* SQL migrations
+
+* Go-function migrations
+
+
+
+It can therefore combine schema changes with application-level data transformations.
+
+
+
+Useful features include:
+
+
+
+* ordered migrations
+
+* embedded migrations
+
+* out-of-order migrations
+
+* seed data
+
+* multiple databases
+
+* CLI and library usage
+
+---
+
+## 4. Flyway Community [![GitHub stars](https://img.shields.io/github/stars/flyway/flyway?style=social&color=white)](https://github.com/flyway/flyway/stargazers)
 
 [GitHub](https://github.com/flyway/flyway)
 
@@ -207,15 +274,93 @@ Strengths:
 
 The open-source project remains available separately from Redgate's commercial editions.
 
+---
 
+## 5. Atlas [![GitHub stars](https://img.shields.io/github/stars/ariga/atlas?style=social&color=white)](https://github.com/ariga/atlas/stargazers)
+
+[GitHub](https://github.com/ariga.io/atlas)
+
+
+
+Atlas provides:
+
+
+
+* declarative schema management
+
+* schema inspection
+
+* schema diffing
+
+* migration planning
+
+* versioned migrations
+
+* schema-as-code
+
+* CI/CD integration
+
+
+
+Atlas is particularly useful when the desired database state is treated as the source of truth.
 
 ---
 
+## 6. dbmate [![GitHub stars](https://img.shields.io/github/stars/amacneil/dbmate?style=social&color=white)](https://github.com/amacneil/dbmate/stargazers)
+
+[GitHub](https://github.com/amacneil/dbmate)
 
 
-## 2. Liquibase Community
+
+A lightweight, language-independent migration tool.
 
 
+
+Typical characteristics:
+
+
+
+* timestamped migrations
+
+* plain SQL
+
+* PostgreSQL
+
+* MySQL
+
+* MariaDB
+
+* SQLite
+
+* ClickHouse
+
+* BigQuery
+
+* schema dump generation
+
+* simple CLI
+
+
+
+Particularly useful for polyglot organizations.
+
+---
+
+## 7. pgroll [![GitHub stars](https://img.shields.io/github/stars/xataio/pgroll?style=social&color=white)](https://github.com/xataio/pgroll/stargazers)
+
+[GitHub](https://github.com/xataio/pgroll)
+
+pgroll is an open-source CLI and Go library by Xata that enables zero-downtime, reversible schema migrations for PostgreSQL by automating the expand/contract pattern.
+
+Features:
+* 🛡️ Multi-version schema coexistence: applications can run against both old and new schema versions concurrently
+* ⏪ Instant instantaneous rollbacks without downtime or locking
+* ⚡ Automatic trigger-based backfills that copy data forward between old and new columns
+* 🔒 Completely avoids long table-level exclusive locks on busy production Postgres databases
+
+---
+
+## 8. Liquibase Community [![GitHub stars](https://img.shields.io/github/stars/liquibase/liquibase?style=social&color=white)](https://github.com/liquibase/liquibase/stargazers)
 
 [GitHub](https://github.com/liquibase/liquibase)
 
@@ -257,225 +402,39 @@ Useful for:
 
 * CI/CD
 
+---
 
+## 9. Phinx [![GitHub stars](https://img.shields.io/github/stars/cakephp/phinx?style=social&color=white)](https://github.com/cakephp/phinx/stargazers)
+
+[GitHub](https://github.com/cakephp/phinx)
+
+Phinx is a hugely popular, framework-agnostic database migration library and CLI for PHP developers.
+
+Features:
+* 🐘 Seamless integration with Laravel, Symfony, CakePHP, Slim, or standalone PHP projects
+* 📜 Write migrations in plain SQL or an intuitive PHP schema-builder API
+* 🔄 Automatic reversible migrations: Phinx derives down migrations automatically from `change()`
+* 🗄️ Native driver support for MySQL, PostgreSQL, SQLite, and Microsoft SQL Server
+* 🌿 Built-in seed data support for populating test and development fixtures
 
 ---
 
+## 10. sql-migrate [![GitHub stars](https://img.shields.io/github/stars/rubenv/sql-migrate?style=social&color=white)](https://github.com/rubenv/sql-migrate/stargazers)
 
+[GitHub](https://github.com/rubenv/sql-migrate)
 
-## 3. Bytebase
+sql-migrate is a streamlined Go-based database migration library and CLI tool using standard Go database/sql drivers.
 
-
-
-[GitHub](https://github.com/bytebase/bytebase)
-
-
-
-Bytebase is particularly interesting because it goes beyond a simple migration CLI.
-
-
-
-It combines:
-
-
-
-* SQL review
-
-* approval workflows
-
-* database change management
-
-* GitOps
-
-* deployment
-
-* audit
-
-* environment management
-
-* database governance
-
-
-
-This makes it one of the closest open-source projects to a broader **database DevOps platform** rather than merely a migration library.
-
-
+Features:
+* 📜 Plain SQL migration files with clean `-- +migrate Up` and `-- +migrate Down` annotations
+* 📦 Can be compiled directly into Go binaries using Go 1.16+ `embed.FS` or run as a standalone CLI
+* 🗄️ Cross-database support for PostgreSQL, MySQL, SQLite, Oracle, and Microsoft SQL Server
+* ⚙️ Gorp-compatible schema tracking metadata table
+* 🔄 Bidirectional migration execution with dry-run capabilities
 
 ---
 
-
-
-## 4. Atlas
-
-
-
-[GitHub](https://github.com/ariga.io/atlas)
-
-
-
-Atlas provides:
-
-
-
-* declarative schema management
-
-* schema inspection
-
-* schema diffing
-
-* migration planning
-
-* versioned migrations
-
-* schema-as-code
-
-* CI/CD integration
-
-
-
-Atlas is particularly useful when the desired database state is treated as the source of truth.
-
-
-
----
-
-
-
-## 5. golang-migrate
-
-
-
-[GitHub](https://github.com/golang-migrate/migrate)
-
-
-
-A lightweight Go migration library and CLI.
-
-
-
-Features include:
-
-
-
-* versioned migrations
-
-* `.up.sql` / `.down.sql`
-
-* CLI
-
-* Go library
-
-* many database drivers
-
-* filesystem migrations
-
-* GitHub migrations
-
-* S3/GCS sources
-
-
-
-It is an excellent building block for custom migration infrastructure.
-
-
-
----
-
-
-
-## 6. goose
-
-
-
-[GitHub](https://github.com/pressly/goose)
-
-
-
-Goose supports both:
-
-
-
-* SQL migrations
-
-* Go-function migrations
-
-
-
-It can therefore combine schema changes with application-level data transformations.
-
-
-
-Useful features include:
-
-
-
-* ordered migrations
-
-* embedded migrations
-
-* out-of-order migrations
-
-* seed data
-
-* multiple databases
-
-* CLI and library usage
-
-
-
----
-
-
-
-## 7. dbmate
-
-
-
-[GitHub](https://github.com/amacneil/dbmate)
-
-
-
-A lightweight, language-independent migration tool.
-
-
-
-Typical characteristics:
-
-
-
-* timestamped migrations
-
-* plain SQL
-
-* PostgreSQL
-
-* MySQL
-
-* MariaDB
-
-* SQLite
-
-* ClickHouse
-
-* BigQuery
-
-* schema dump generation
-
-* simple CLI
-
-
-
-Particularly useful for polyglot organizations.
-
-
-
----
-
-
-
-## 8. Sqitch
-
-
+## 11. Sqitch [![GitHub stars](https://img.shields.io/github/stars/sqitchers/sqitch?style=social&color=white)](https://github.com/sqitchers/sqitch/stargazers)
 
 [GitHub](https://github.com/sqitchers/sqitch)
 
@@ -513,15 +472,39 @@ Features:
 
 * strong database-native approach
 
+---
 
+## 12. node-db-migrate [![GitHub stars](https://img.shields.io/github/stars/db-migrate/node-db-migrate?style=social&color=white)](https://github.com/db-migrate/node-db-migrate/stargazers)
+
+[GitHub](https://github.com/db-migrate/node-db-migrate)
+
+db-migrate is the mature, standard database migration framework for Node.js and TypeScript.
+
+Features:
+* 🟢 Native JavaScript and TypeScript migration scripts as well as raw `.sql` files
+* 🔌 Driver plugins for PostgreSQL, MySQL, MariaDB, SQLite, MongoDB, and Oracle
+* ⚙️ Rich environment configuration support with environment variable substitution
+* 🔄 Clean forward and backward migration tracking with timestamp versioning
+* 🛠️ Extensible lifecycle hooks and programmatic Node.js API
 
 ---
 
+## 13. tern [![GitHub stars](https://img.shields.io/github/stars/jackc/tern?style=social&color=white)](https://github.com/jackc/tern/stargazers)
 
+[GitHub](https://github.com/jackc/tern)
 
-## 9. Graphile Migrate
+tern is a lightweight, stand-alone PostgreSQL migration tool written in Go by the creator of the popular `pgx` driver.
 
+Features:
+* 🐘 Purpose-built exclusively for PostgreSQL: embraces full PostgreSQL DDL without lowest-common-denominator compromises
+* 🔒 Robust PostgreSQL advisory locks to prevent race conditions during concurrent deployments
+* 📜 Simple `.sql` files with `---- create above / drop below ----` separation
+* 🌿 Dot-env file and environment variable configuration
+* ⚡ High execution speed and ultra-small binary footprint
 
+---
+
+## 14. Graphile Migrate [![GitHub stars](https://img.shields.io/github/stars/graphile/migrate?style=social&color=white)](https://github.com/graphile/migrate/stargazers)
 
 [GitHub](https://github.com/graphile/migrate)
 
@@ -545,61 +528,13 @@ Useful for:
 
 * shadow database workflows
 
-
-
 ---
 
+# 📋 Open-Source Declarative Schema Tools
 
+Declarative schema tools compare your desired schema state with the target database and automatically synthesize required migration DDL, sorted descending by GitHub star count:
 
-# Open-Source Declarative Schema Tools
-
-
-
-Declarative systems differ from traditional migration systems.
-
-
-
-Instead of saying:
-
-
-
-```sql
-
-ALTER TABLE users ADD COLUMN email TEXT;
-
-```
-
-
-
-you describe the desired final state:
-
-
-
-```text
-
-users
-
- ├── id
-
- ├── name
-
- └── email
-
-```
-
-
-
-The migration engine calculates the difference.
-
-
-
----
-
-
-
-## Atlas
-
-
+## 1. Atlas [![GitHub stars](https://img.shields.io/github/stars/ariga/atlas?style=social&color=white)](https://github.com/ariga/atlas/stargazers)
 
 [GitHub](https://github.com/ariga.io/atlas)
 
@@ -635,77 +570,9 @@ Apply
 
 ```
 
-
-
 ---
 
-
-
-## Skeema
-
-
-
-[GitHub](https://github.com/skeema/skeema)
-
-
-
-Declarative MySQL/MariaDB schema management.
-
-
-
-Particularly useful for teams managing:
-
-
-
-* MySQL
-
-* MariaDB
-
-* SQL schema files
-
-* Git-based schema changes
-
-* automated schema deployment
-
-
-
----
-
-
-
-## pgschema
-
-
-
-[GitHub](https://github.com/pgschema/pgschema)
-
-
-
-PostgreSQL-oriented schema management and migration tooling.
-
-
-
-Useful for:
-
-
-
-* PostgreSQL
-
-* schema comparison
-
-* declarative workflows
-
-* migration generation
-
-
-
----
-
-
-
-## migra
-
-
+## 2. migra [![GitHub stars](https://img.shields.io/github/stars/djrobstep/migra?style=social&color=white)](https://github.com/djrobstep/migra/stargazers)
 
 [GitHub](https://github.com/djrobstep/migra)
 
@@ -745,15 +612,59 @@ Generated SQL
 
 Excellent as a building block for custom migration systems.
 
+---
 
+## 3. Skeema [![GitHub stars](https://img.shields.io/github/stars/skeema/skeema?style=social&color=white)](https://github.com/skeema/skeema/stargazers)
+
+[GitHub](https://github.com/skeema/skeema)
+
+
+
+Declarative MySQL/MariaDB schema management.
+
+
+
+Particularly useful for teams managing:
+
+
+
+* MySQL
+
+* MariaDB
+
+* SQL schema files
+
+* Git-based schema changes
+
+* automated schema deployment
 
 ---
 
+## 4. pgschema [![GitHub stars](https://img.shields.io/github/stars/pgschema/pgschema?style=social&color=white)](https://github.com/pgschema/pgschema/stargazers)
+
+[GitHub](https://github.com/pgschema/pgschema)
 
 
-## apgdiff
+
+PostgreSQL-oriented schema management and migration tooling.
 
 
+
+Useful for:
+
+
+
+* PostgreSQL
+
+* schema comparison
+
+* declarative workflows
+
+* migration generation
+
+---
+
+## 5. apgdiff [![GitHub stars](https://img.shields.io/github/stars/fordfrog/apgdiff?style=social&color=white)](https://github.com/fordfrog/apgdiff/stargazers)
 
 [GitHub](https://github.com/fordfrog/apgdiff)
 
@@ -775,23 +686,45 @@ Useful for:
 
 * CI pipelines
 
+---
 
+# 🔗 ORM-Integrated Migration Frameworks
+
+Many engineering teams manage schemas directly through their application ORM. Here are the leading open-source ORM migration frameworks, sorted descending by GitHub star count:
+
+## 1. Django Migrations [![GitHub stars](https://img.shields.io/github/stars/django/django?style=social&color=white)](https://github.com/django/django/stargazers)
+
+[GitHub](https://github.com/django/django)
+
+
+
+Django's migration framework provides:
+
+
+
+* model-to-schema migration
+
+* migration dependencies
+
+* migration history
+
+* schema evolution
+
+* data migrations
 
 ---
 
+## 2. Rails Active Record Migrations [![GitHub stars](https://img.shields.io/github/stars/rails/rails?style=social&color=white)](https://github.com/rails/rails/stargazers)
 
-
-# ORM-Integrated Migration Frameworks
-
-
-
-These tools tie schema migration directly to an application framework or ORM.
+[GitHub](https://github.com/rails/rails)
 
 
 
-## Prisma Migrate
+A mature migration system integrated directly into Ruby on Rails.
 
+---
 
+## 3. Prisma Migrate [![GitHub stars](https://img.shields.io/github/stars/prisma/prisma?style=social&color=white)](https://github.com/prisma/prisma/stargazers)
 
 [GitHub](https://github.com/prisma/prisma)
 
@@ -813,15 +746,107 @@ Excellent for:
 
 * development database workflows
 
+---
 
+## 4. GORM [![GitHub stars](https://img.shields.io/github/stars/go-gorm/gorm?style=social&color=white)](https://github.com/go-gorm/gorm/stargazers)
+
+[GitHub](https://github.com/go-gorm/gorm)
+
+
+
+Go ORM with automatic migration facilities.
 
 ---
 
+## 5. TypeORM [![GitHub stars](https://img.shields.io/github/stars/typeorm/typeorm?style=social&color=white)](https://github.com/typeorm/typeorm/stargazers)
+
+[GitHub](https://github.com/typeorm/typeorm)
 
 
-## Alembic
+
+TypeScript/JavaScript ORM with migration generation and execution.
+
+---
+
+## 6. Drizzle Kit [![GitHub stars](https://img.shields.io/github/stars/drizzle-team/drizzle-orm?style=social&color=white)](https://github.com/drizzle-team/drizzle-orm/stargazers)
+
+[GitHub](https://github.com/drizzle-team/drizzle-orm)
 
 
+
+TypeScript-oriented schema and migration tooling.
+
+
+
+Useful for modern:
+
+
+
+* TypeScript
+
+* Node.js
+
+* serverless
+
+* PostgreSQL
+
+* MySQL
+
+* SQLite
+
+---
+
+## 7. Sequelize [![GitHub stars](https://img.shields.io/github/stars/sequelize/sequelize?style=social&color=white)](https://github.com/sequelize/sequelize/stargazers)
+
+[GitHub](https://github.com/sequelize/sequelize)
+
+
+
+Node.js ORM with migration tooling.
+
+---
+
+## 8. Knex.js [![GitHub stars](https://img.shields.io/github/stars/knex/knex?style=social&color=white)](https://github.com/knex/knex/stargazers)
+
+[GitHub](https://github.com/knex/knex)
+
+
+
+Node.js SQL query builder with migration support.
+
+---
+
+## 9. Ent [![GitHub stars](https://img.shields.io/github/stars/ent/ent?style=social&color=white)](https://github.com/ent/ent/stargazers)
+
+[GitHub](https://github.com/ent/ent)
+
+
+
+Go entity framework with schema-driven development and migration capabilities.
+
+---
+
+## 10. Diesel [![GitHub stars](https://img.shields.io/github/stars/diesel-rs/diesel?style=social&color=white)](https://github.com/diesel-rs/diesel/stargazers)
+
+[GitHub](https://github.com/diesel-rs/diesel)
+
+
+
+Rust ORM/query builder with migration support.
+
+---
+
+## 11. SeaORM [![GitHub stars](https://img.shields.io/github/stars/SeaQL/sea-orm?style=social&color=white)](https://github.com/SeaQL/sea-orm/stargazers)
+
+[GitHub](https://github.com/SeaQL/sea-orm)
+
+
+
+Rust ORM with migration tooling.
+
+---
+
+## 12. Alembic [![GitHub stars](https://img.shields.io/github/stars/sqlalchemy/alembic?style=social&color=white)](https://github.com/sqlalchemy/alembic/stargazers)
 
 [GitHub](https://github.com/sqlalchemy/alembic)
 
@@ -849,59 +874,9 @@ Strong for:
 
 * SQL Server
 
-
-
 ---
 
-
-
-## Django Migrations
-
-
-
-[GitHub](https://github.com/django/django)
-
-
-
-Django's migration framework provides:
-
-
-
-* model-to-schema migration
-
-* migration dependencies
-
-* migration history
-
-* schema evolution
-
-* data migrations
-
-
-
----
-
-
-
-## Rails Active Record Migrations
-
-
-
-[GitHub](https://github.com/rails/rails)
-
-
-
-A mature migration system integrated directly into Ruby on Rails.
-
-
-
----
-
-
-
-## Ecto SQL Sandbox / Ecto Migrations
-
-
+## 13. Ecto SQL Sandbox / Ecto Migrations [![GitHub stars](https://img.shields.io/github/stars/elixir-ecto/ecto?style=social&color=white)](https://github.com/elixir-ecto/ecto/stargazers)
 
 [GitHub](https://github.com/elixir-ecto/ecto_sql)
 
@@ -909,159 +884,9 @@ A mature migration system integrated directly into Ruby on Rails.
 
 Excellent for Elixir applications.
 
-
-
 ---
 
-
-
-## Knex.js
-
-
-
-[GitHub](https://github.com/knex/knex)
-
-
-
-Node.js SQL query builder with migration support.
-
-
-
----
-
-
-
-## Drizzle Kit
-
-
-
-[GitHub](https://github.com/drizzle-team/drizzle-orm)
-
-
-
-TypeScript-oriented schema and migration tooling.
-
-
-
-Useful for modern:
-
-
-
-* TypeScript
-
-* Node.js
-
-* serverless
-
-* PostgreSQL
-
-* MySQL
-
-* SQLite
-
-
-
----
-
-
-
-## Sequelize
-
-
-
-[GitHub](https://github.com/sequelize/sequelize)
-
-
-
-Node.js ORM with migration tooling.
-
-
-
----
-
-
-
-## TypeORM
-
-
-
-[GitHub](https://github.com/typeorm/typeorm)
-
-
-
-TypeScript/JavaScript ORM with migration generation and execution.
-
-
-
----
-
-
-
-## Diesel
-
-
-
-[GitHub](https://github.com/diesel-rs/diesel)
-
-
-
-Rust ORM/query builder with migration support.
-
-
-
----
-
-
-
-## SeaORM
-
-
-
-[GitHub](https://github.com/SeaQL/sea-orm)
-
-
-
-Rust ORM with migration tooling.
-
-
-
----
-
-
-
-## Ent
-
-
-
-[GitHub](https://github.com/ent/ent)
-
-
-
-Go entity framework with schema-driven development and migration capabilities.
-
-
-
----
-
-
-
-## GORM
-
-
-
-[GitHub](https://github.com/go-gorm/gorm)
-
-
-
-Go ORM with automatic migration facilities.
-
-
-
----
-
-
-
-# Schema Diff & Schema-as-Code Tools
+# 📊 Schema Diff & Schema-as-Code Tools
 
 
 
@@ -1091,27 +916,13 @@ Go ORM with automatic migration facilities.
 
 ---
 
+---
 
+# 🛡️ Zero-Downtime / Online Schema Change
 
-# Zero-Downtime / Online Schema Change
+Traditional `ALTER TABLE` operations on massive tables can cause exclusive table locks, application timeouts, and service outages. These open-source tools perform online schema changes safely in place, sorted descending by GitHub star count:
 
-
-
-Migration platforms increasingly need to solve a harder problem:
-
-
-
-> How do you change a large production table without causing unacceptable downtime or locking?
-
-
-
-These projects are not direct replacements for Liquibase or Flyway, but they are important open-source building blocks.
-
-
-
-## gh-ost
-
-
+## 1. gh-ost [![GitHub stars](https://img.shields.io/github/stars/github/gh-ost?style=social&color=white)](https://github.com/github/gh-ost/stargazers)
 
 [GitHub](https://github.com/github/gh-ost)
 
@@ -1133,47 +944,9 @@ Useful for:
 
 * production migrations
 
-
-
 ---
 
-
-
-## pt-online-schema-change
-
-
-
-[GitHub](https://github.com/percona/percona-toolkit)
-
-
-
-Percona Toolkit provides online schema-change functionality for MySQL-compatible databases.
-
-
-
----
-
-
-
-## pg_repack
-
-
-
-[GitHub](https://github.com/reorg/pg_repack)
-
-
-
-PostgreSQL maintenance utility useful for rebuilding tables and indexes with reduced blocking compared with conventional approaches.
-
-
-
----
-
-
-
-## pgroll
-
-
+## 2. pgroll [![GitHub stars](https://img.shields.io/github/stars/xataio/pgroll?style=social&color=white)](https://github.com/xataio/pgroll/stargazers)
 
 [GitHub](https://github.com/xataio/pgroll)
 
@@ -1217,15 +990,19 @@ New Schema
 
 ```
 
+---
 
+## 3. pg_repack [![GitHub stars](https://img.shields.io/github/stars/reorg/pg_repack?style=social&color=white)](https://github.com/reorg/pg_repack/stargazers)
+
+[GitHub](https://github.com/reorg/pg_repack)
+
+
+
+PostgreSQL maintenance utility useful for rebuilding tables and indexes with reduced blocking compared with conventional approaches.
 
 ---
 
-
-
-## Reshape
-
-
+## 4. Reshape [![GitHub stars](https://img.shields.io/github/stars/fabianlindfors/reshape?style=social&color=white)](https://github.com/fabianlindfors/reshape/stargazers)
 
 [GitHub](https://github.com/fabianlindfors/reshape)
 
@@ -1245,165 +1022,36 @@ Useful for:
 
 * PostgreSQL
 
+---
 
+## 5. pt-online-schema-change [![GitHub stars](https://img.shields.io/github/stars/percona/percona-toolkit?style=social&color=white)](https://github.com/percona/percona-toolkit/stargazers)
+
+[GitHub](https://github.com/percona/percona-toolkit)
+
+
+
+Percona Toolkit provides online schema-change functionality for MySQL-compatible databases.
 
 ---
 
+# 🌿 Database Branching &amp; Database-as-Code
 
+Database branching creates copy-on-write, instant, isolated clones of databases for preview environments, PR testing, and migration verification, sorted descending by GitHub star count:
 
-# Database Branching & Database-as-Code
+## 1. Supabase [![GitHub stars](https://img.shields.io/github/stars/supabase/supabase?style=social&color=white)](https://github.com/supabase/supabase/stargazers)
 
+[GitHub](https://github.com/supabase/supabase)
 
+Supabase is an open-source Firebase alternative built on top of PostgreSQL that features production database branching.
 
-Database branching is a different concept from ordinary schema migration.
-
-
-
-Instead of:
-
-
-
-```text
-
-Production
-
-   ↓
-
-Migration
-
-   ↓
-
-Production'
-
-```
-
-
-
-branching provides:
-
-
-
-```text
-
-                Production
-
-                    │
-
-          ┌─────────┴─────────┐
-
-          ↓                   ↓
-
-      Feature A           Feature B
-
-      Database             Database
-
-          │                   │
-
-          ↓                   ↓
-
-       Tests              Tests
-
-          │                   │
-
-          └─────────┬─────────┘
-
-                    ↓
-
-                 Merge
-
-```
-
-
+Key capabilities:
+* 🌿 Instant preview environments and branch databases for pull requests
+* 📜 Full migration CLI (`supabase migration new`, `supabase db push`)
+* 🐳 Complete local development suite running PostgreSQL, Auth, and Storage in Docker
 
 ---
 
-
-
-## Neon
-
-
-
-[GitHub](https://github.com/neondatabase/neon)
-
-
-
-Neon provides PostgreSQL branching using a cloud-native architecture.
-
-
-
-Useful for:
-
-
-
-* preview databases
-
-* development branches
-
-* CI databases
-
-* ephemeral environments
-
-* database-as-code workflows
-
-
-
----
-
-
-
-## PlanetScale
-
-
-
-[GitHub](https://github.com/planetscale)
-
-
-
-PlanetScale provides branching-oriented workflows around Vitess/MySQL.
-
-
-
-The underlying [Vitess](https://github.com/vitessio/vitess) project is open source.
-
-
-
----
-
-
-
-## Vitess
-
-
-
-[GitHub](https://github.com/vitessio/vitess)
-
-
-
-Vitess is a powerful open-source MySQL-compatible database clustering system.
-
-
-
-Although it is not a direct migration-platform replacement, it provides important infrastructure for:
-
-
-
-* database sharding
-
-* schema management
-
-* online schema changes
-
-* large-scale MySQL deployments
-
-
-
----
-
-
-
-## Dolt
-
-
+## 2. Dolt [![GitHub stars](https://img.shields.io/github/stars/dolthub/dolt?style=social&color=white)](https://github.com/dolthub/dolt/stargazers)
 
 [GitHub](https://github.com/dolthub/dolt)
 
@@ -1435,15 +1083,9 @@ history
 
 This makes Dolt highly relevant to the broader **database branching / version control** category.
 
-
-
 ---
 
-
-
-## DoltHub
-
-
+## 3. DoltHub
 
 [Website](https://www.dolthub.com/)
 
@@ -1451,13 +1093,73 @@ This makes Dolt highly relevant to the broader **database branching / version co
 
 Hosted infrastructure around Dolt databases.
 
+---
 
+## 4. Neon [![GitHub stars](https://img.shields.io/github/stars/neondatabase/neon?style=social&color=white)](https://github.com/neondatabase/neon/stargazers)
+
+[GitHub](https://github.com/neondatabase/neon)
+
+
+
+Neon provides PostgreSQL branching using a cloud-native architecture.
+
+
+
+Useful for:
+
+
+
+* preview databases
+
+* development branches
+
+* CI databases
+
+* ephemeral environments
+
+* database-as-code workflows
 
 ---
 
+## 5. Vitess [![GitHub stars](https://img.shields.io/github/stars/vitessio/vitess?style=social&color=white)](https://github.com/vitessio/vitess/stargazers)
+
+[GitHub](https://github.com/vitessio/vitess)
 
 
-# Database DevOps & Governance
+
+Vitess is a powerful open-source MySQL-compatible database clustering system.
+
+
+
+Although it is not a direct migration-platform replacement, it provides important infrastructure for:
+
+
+
+* database sharding
+
+* schema management
+
+* online schema changes
+
+* large-scale MySQL deployments
+
+---
+
+## 6. PlanetScale
+
+[GitHub](https://github.com/planetscale)
+
+
+
+PlanetScale provides branching-oriented workflows around Vitess/MySQL.
+
+
+
+The underlying [Vitess](https://github.com/vitessio/vitess) project is open source.
+
+---
+
+# 🏛️ Database DevOps & Governance
 
 
 
@@ -1637,7 +1339,7 @@ Open-source identity and access management for custom migration platforms.
 
 
 
-# Additional Strong Open-Source Options
+# 📦 Additional Strong Open-Source Options
 
 
 
@@ -1783,7 +1485,7 @@ Open-source identity and access management for custom migration platforms.
 
 
 
-# Commercial Platform → Open-Source Equivalents
+# 🔄 Commercial Platform → Open-Source Equivalents
 
 
 
@@ -1831,7 +1533,7 @@ Open-source identity and access management for custom migration platforms.
 
 
 
-# Frameworks for Building Custom Schema Migration Platforms
+# 🏗️ Frameworks for Building Custom Schema Migration Platforms
 
 
 
@@ -2009,7 +1711,7 @@ ClickHouse
 
 
 
-# Reference Architecture
+# 🏛️ Reference Architecture
 
 
 
@@ -2123,7 +1825,7 @@ flowchart TD
 
 
 
-# Typical Migration Workflow
+# 🔄 Typical Migration Workflow
 
 
 
@@ -2205,7 +1907,7 @@ flowchart LR
 
 
 
-# Declarative Schema Workflow
+# 📋 Declarative Schema Workflow
 
 
 
@@ -2279,7 +1981,7 @@ The key advantage is that developers describe **what the schema should look like
 
 
 
-# Database Branching Workflow
+# 🌿 Database Branching Workflow
 
 
 
@@ -2379,7 +2081,7 @@ This architecture is especially valuable for:
 
 
 
-# Expand / Contract Migration Pattern
+# ⚡ Expand / Contract Migration Pattern
 
 
 
@@ -2509,7 +2211,7 @@ This pattern is particularly important for:
 
 
 
-# Capability Matrix
+# 📊 Capability Matrix
 
 
 
@@ -2553,7 +2255,7 @@ This pattern is particularly important for:
 
 
 
-# Recommended Open-Source Stacks
+# 💡 Recommended Open-Source Stacks
 
 
 
@@ -3005,7 +2707,7 @@ Online Schema Change
 
 
 
-# Example Repository Structure
+# 📁 Example Repository Structure
 
 
 
@@ -3079,7 +2781,7 @@ database/
 
 
 
-# Example CI/CD Pipeline
+# 🚀 Example CI/CD Pipeline
 
 
 
@@ -3183,7 +2885,7 @@ Example pipeline stages:
 
 
 
-# Destructive Migration Detection
+# ⚠️ Destructive Migration Detection
 
 
 
@@ -3249,7 +2951,7 @@ DANGEROUS
 
 
 
-# Migration Metadata Model
+# 🗂️ Migration Metadata Model
 
 
 
@@ -3321,7 +3023,7 @@ deployment_window
 
 
 
-# Migration Safety Model
+# 🛡️ Migration Safety Model
 
 
 
@@ -3393,7 +3095,7 @@ A sophisticated open-source platform can implement:
 
 
 
-# What Is Still Difficult to Reproduce in Open Source?
+# 🧩 What Is Still Difficult to Reproduce in Open Source?
 
 
 
@@ -3673,7 +3375,7 @@ Safe migration systems often rely on:
 
 
 
-# Why Open Source Is Interesting
+# 🌟 Why Open Source Is Interesting
 
 
 
@@ -3785,7 +3487,7 @@ The resulting platform can provide:
 
 
 
-# Best Open-Source Projects by Use Case
+# 🎯 Best Open-Source Projects by Use Case
 
 
 
@@ -3845,7 +3547,7 @@ The resulting platform can provide:
 
 
 
-# Recommended Open-Source Shortlist
+# 🏆 Recommended Open-Source Shortlist
 
 
 
@@ -3947,7 +3649,7 @@ If the objective is to build a serious open-source alternative to the commercial
 
 
 
-# A Practical Fully Open-Source Reference Stack
+# 💎 A Practical Fully Open-Source Reference Stack
 
 
 
@@ -4053,7 +3755,7 @@ without requiring one proprietary product to provide the entire stack.
 
 
 
-# Conclusion
+# 🏁 Conclusion
 
 
 
@@ -4217,7 +3919,13 @@ The most interesting open-source opportunity is therefore not necessarily to bui
 
 
 
-# How to Contribute
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Schema-Migration-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Schema-Migration-Platform&type=date&legend=top-left)
+
+---
+
+# 🤝 How to Contribute
 
 
 
@@ -4257,7 +3965,7 @@ Pull requests are welcome.
 
 
 
-# Disclaimer
+# 📜 Disclaimer
 
 
 
