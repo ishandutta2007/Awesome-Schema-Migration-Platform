@@ -114,45 +114,28 @@ These are commercial, hosted or enterprise-oriented database schema migration / 
 
 
 
-| Platform                                                                                                       | Primary Model               | Main Strength                              |
-
-| -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------------------------------------------ |
-
-| [Liquibase](https://www.liquibase.com/)                                                                        | Versioned / declarative     | Enterprise database change management      |
-
-| [Flyway](https://www.red-gate.com/hub/product-learning/flyway)                                                 | Versioned migrations        | Simple SQL-first migrations                |
-
-| [Bytebase](https://www.bytebase.com/)                                                                          | Governance + GitOps         | SQL review, approval, audit and deployment |
-
-| [Atlas Cloud](https://atlasgo.io/)                                                                             | Declarative + versioned     | Schema-as-code and migration planning      |
-
-| [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate)                                                | ORM-integrated              | TypeScript/Prisma workflow                 |
-
-| [Alembic](https://alembic.sqlalchemy.org/)                                                                     | ORM-integrated              | Python / SQLAlchemy migrations             |
-
-| [Neon](https://neon.tech/)                                                                                     | Database branching          | PostgreSQL branching                       |
-
-| [PlanetScale](https://planetscale.com/)                                                                        | Database branching          | MySQL/Vitess branching and deploy requests |
-
-| [DBmaestro](https://www.dbmaestro.com/)                                                                        | Database DevOps             | Change automation and governance           |
-
-| [Redgate SQL Change Automation](https://www.red-gate.com/products/software-development/sql-change-automation/) | Database DevOps             | SQL Server deployment automation           |
-
-| [Redgate Flyway](https://documentation.red-gate.com/flyway)                                                    | Migration automation        | Enterprise migration workflows             |
-
-| [Delphix](https://www.delphix.com/)                                                                            | Data virtualization         | Environment/data branching                 |
-
-| [Harness Database DevOps](https://www.harness.io/products/database-devops)                                     | Database DevOps             | CI/CD database deployment                  |
-
-| [Octopus Deploy](https://octopus.com/)                                                                         | Deployment automation       | Database deployment pipelines              |
-
-| [Liquibase Hub](https://www.liquibase.com/products/database-devops)                                            | Governance                  | Centralized database change visibility     |
-
-| [Percona Toolkit](https://www.percona.com/software/mysql-tools/percona-toolkit)                                | Database operations         | Online schema-change tooling               |
-
-| [Skeema](https://www.skeema.io/)                                                                               | Declarative                 | MySQL/MariaDB schema management            |
-
-| [Dolt](https://www.dolthub.com/)                                                                               | Version-controlled database | Git-like database branching/versioning     |
+| Platform | Primary Model | Main Strength | Pricing (Starting Tier) | Free Tier / Trial Limits |
+| -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------------------------------------------ | ------------------------ | ------------------------ |
+| [Bytebase](https://www.bytebase.com/) | Governance + GitOps | SQL review, approval, audit and deployment | $20/user/month (Pro plan) | Free forever for up to 20 users and 10 database instances (includes GitOps schema management, declarative migrations, schema compare & sync) |
+| [Atlas Cloud](https://atlasgo.io/) | Declarative + versioned | Schema-as-code and migration planning | $9/user/month (Pro seat) + $59/month per CI/CD project (includes 2 target databases) | Free forever for Community tier (1 project, basic inspection & diffing, ORM integration); 14-day free trial for Pro (no credit card required) |
+| [Neon](https://neon.tech/) | Database branching | Serverless PostgreSQL branching | $0.106/CU-hour + $0.35/GB-month (Launch tier; typical starting spend ~$19/month, $0 minimum commitment) | Free forever plan with 100 projects, 0.5 GB storage per project, 100 CU-hours/month per project, compute up to 2 CU (8 GB RAM), and instant database branching |
+| [PlanetScale](https://planetscale.com/) | Database branching | MySQL/Vitess branching and deploy requests | $5/month (Development database) or $39/month (Scaler tier, includes 10 GB storage & 1B row reads) | 14-day free trial with full access to branching, deploy requests, schema reverts, and 10 GB storage (no credit card required during trial) |
+| [Prisma Migrate](https://www.prisma.io/docs/orm/prisma-migrate) | ORM-integrated | TypeScript/Prisma workflow & platform metrics | $10/month (Starter tier; includes 5M requests, 1M operations, 10 GB storage) | Free forever for Prisma ORM CLI (unlimited local migrations); Prisma Data Platform Free tier includes 1M requests/month, 200k operations/month, 360 GB-hours memory, and 10 GB egress |
+| [Liquibase](https://www.liquibase.com/) | Versioned / declarative | Enterprise database change management | $25/target/month ($300/target/year, billed annually, minimum 5 targets = $1,500/year for Liquibase Pro) | Free forever for Liquibase Community (open-source CLI, unlimited migrations, rollback scripts); 30-day free trial for Liquibase Pro with targeted rollbacks, quality checks, and drift detection |
+| [Flyway](https://www.red-gate.com/hub/product-learning/flyway) | Versioned migrations | Simple SQL-first migrations | $49.58/user/month ($595/user/year, billed annually) for Flyway Teams; ~$3,750/target/year for Enterprise | Free forever for Flyway Community (Apache 2.0 open-source CLI/Maven/Gradle, unlimited migrations); 28-day free trial for Flyway Enterprise with full multi-database governance |
+| [Redgate Flyway](https://documentation.red-gate.com/flyway) | Migration automation | Enterprise migration workflows | $49.58/user/month ($595/user/year) for Teams; Enterprise starting at ~$3,750/target/year | Free forever for Flyway Community; 28-day free trial for Flyway Enterprise with auto-rollback, static code analysis, and artifact generation |
+| [Octopus Deploy](https://octopus.com/) | Deployment automation | Database deployment pipelines & runbooks | $173.33/month ($2,080/year) for Octopus Server; $360.83/month ($4,330/year) for Octopus Cloud (up to 25 targets) | Free forever plan for Cloud and Server with up to 10 deployment targets/machines, 10 projects, 10 users, 1 space, and 5 concurrent tasks; 30-day free trial for Enterprise |
+| [Skeema](https://www.skeema.io/) | Declarative | MySQL/MariaDB schema management | $54.08/month ($649/year) for Skeema Cloud Linter for GitHub; Skeema Premium CLI starting at $99/year (Plus tier) | Free forever for Skeema Community CLI (Apache 2.0, unlimited schemas/tables/routines); 30-day free trial for Cloud Linter and Premium CLI features |
+| [Dolt](https://www.dolthub.com/) | Version-controlled database | Git-like database branching/versioning | $50/month (~$0.07/hour for entry-level Hosted Dolt instance; $50/month for DoltHub Pro) | Free forever for Dolt CLI; DoltHub includes unlimited free public repositories and 1 GB free storage for private repositories |
+| [DBmaestro](https://www.dbmaestro.com/) | Database DevOps | Change automation and governance | $41/user/month (~$495/user/year, billed annually) | 14-day free trial with full database release automation, drift tracking, and rollback policies for up to 2 pipeline environments |
+| [Redgate SQL Change Automation](https://www.red-gate.com/products/software-development/sql-change-automation/) | Database DevOps | SQL Server deployment automation | $298.75/user/month ($3,585/user/year via Redgate SQL Toolbelt; transitioned to Flyway Enterprise starting at ~$3,750/target/year) | 28-day free trial with full automated SQL Server migrations, Visual Studio integration, and CI/CD release gate testing |
+| [Delphix](https://www.delphix.com/) | Data virtualization | Environment/data branching | $0.48/hour (~$350/month) on AWS Marketplace for Delphix Continuous Data Engine | 30-day evaluation trial / proof of concept upon request (limited to 1 virtual data engine and 1 managed source database) |
+| [Harness Database DevOps](https://www.harness.io/products/database-devops) | Database DevOps | CI/CD database deployment | $50/user/month (or $100/service/month in Harness Continuous Delivery Essentials) | Free forever plan with 1,000 Harness Subscription Units (HSUs)/month, up to 5 users, and pipeline deployment support; 14-day trial for Enterprise modules |
+| [Liquibase Hub](https://www.liquibase.com/products/database-devops) | Governance | Centralized database change visibility | Sunset/Integrated into Liquibase Pro starting at $25/target/month ($1,500/year minimum) | Previously offered 2 free database targets; capabilities transitioned into Liquibase Community (Free forever open-source) and Liquibase Pro (30-day free trial) |
+| [Percona Toolkit](https://www.percona.com/software/mysql-tools/percona-toolkit) | Database operations | Online schema-change tooling | $1,250/month ($15,000/year for standard 1–10 server enterprise support subscription; software is open-source) | 100% Free forever for all CLI tools (pt-online-schema-change, pt-summary) and Percona Monitoring and Management (PMM) under GPLv2 (unlimited instances and migrations) |
+| [Alembic](https://alembic.sqlalchemy.org/) | ORM-integrated | Python / SQLAlchemy migrations | $0/month (100% Free Open Source under MIT license; no commercial paid edition) | 100% Free forever without limits (MIT license, unlimited databases, environments, developers, and migrations) |
+| [Supabase](https://supabase.com/) | Database branching + migrations | Managed Postgres with branching, CLI migrations & preview environments | $25/month (Pro plan; includes 8 GB disk, 100k MAUs, 250 GB egress, daily backups) | Free forever plan including 2 active projects, 500 MB database storage, 1 GB file storage, 200 concurrent connections, and 50,000 monthly active users |
+| [Xata](https://xata.io/) | Database branching + schema management | Serverless PostgreSQL with instant zero-downtime branching & migrations | $20/month (Pro plan; includes 15 GB storage, 50 concurrent requests, unlimited branch creations) | Free forever plan with 15 GB storage, 750,000 operations/month, 10 concurrent requests, and up to 15 branches per database |
 
 
 
