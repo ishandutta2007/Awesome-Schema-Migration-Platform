@@ -110,7 +110,7 @@ These are commercial, hosted, or enterprise-oriented database schema migration a
 
 These are the strongest open-source projects for the core migration problem: **apply database changes in a deterministic, repeatable, and version-controlled manner**, sorted descending by GitHub star count:
 
-## 1. golang-migrate [![GitHub stars](https://img.shields.io/github/stars/golang-migrate/migrate?style=social&color=white)](https://github.com/golang-migrate/migrate/stargazers)
+## 1. golang-migrate [![GitHub_Stars](https://img.shields.io/github/stars/golang-migrate/migrate?style=social&color=white)](https://github.com/golang-migrate/migrate/stargazers)
 
 [GitHub](https://github.com/golang-migrate/migrate)
 
@@ -146,7 +146,7 @@ It is an excellent building block for custom migration infrastructure.
 
 ---
 
-## 2. Bytebase [![GitHub stars](https://img.shields.io/github/stars/bytebase/bytebase?style=social&color=white)](https://github.com/bytebase/bytebase/stargazers)
+## 2. Bytebase [![GitHub_Stars](https://img.shields.io/github/stars/bytebase/bytebase?style=social&color=white)](https://github.com/bytebase/bytebase/stargazers)
 
 [GitHub](https://github.com/bytebase/bytebase)
 
@@ -182,7 +182,7 @@ This makes it one of the closest open-source projects to a broader **database De
 
 ---
 
-## 3. goose [![GitHub stars](https://img.shields.io/github/stars/pressly/goose?style=social&color=white)](https://github.com/pressly/goose/stargazers)
+## 3. goose [![GitHub_Stars](https://img.shields.io/github/stars/pressly/goose?style=social&color=white)](https://github.com/pressly/goose/stargazers)
 
 [GitHub](https://github.com/pressly/goose)
 
@@ -220,7 +220,7 @@ Useful features include:
 
 ---
 
-## 4. Flyway Community [![GitHub stars](https://img.shields.io/github/stars/flyway/flyway?style=social&color=white)](https://github.com/flyway/flyway/stargazers)
+## 4. Flyway Community [![GitHub_Stars](https://img.shields.io/github/stars/flyway/flyway?style=social&color=white)](https://github.com/flyway/flyway/stargazers)
 
 [GitHub](https://github.com/flyway/flyway)
 
@@ -276,7 +276,7 @@ The open-source project remains available separately from Redgate's commercial e
 
 ---
 
-## 5. Atlas [![GitHub stars](https://img.shields.io/github/stars/ariga/atlas?style=social&color=white)](https://github.com/ariga/atlas/stargazers)
+## 5. Atlas [![GitHub_Stars](https://img.shields.io/github/stars/ariga/atlas?style=social&color=white)](https://github.com/ariga/atlas/stargazers)
 
 [GitHub](https://github.com/ariga.io/atlas)
 
@@ -306,7 +306,7 @@ Atlas is particularly useful when the desired database state is treated as the s
 
 ---
 
-## 6. dbmate [![GitHub stars](https://img.shields.io/github/stars/amacneil/dbmate?style=social&color=white)](https://github.com/amacneil/dbmate/stargazers)
+## 6. dbmate [![GitHub_Stars](https://img.shields.io/github/stars/amacneil/dbmate?style=social&color=white)](https://github.com/amacneil/dbmate/stargazers)
 
 [GitHub](https://github.com/amacneil/dbmate)
 
@@ -346,7 +346,7 @@ Particularly useful for polyglot organizations.
 
 ---
 
-## 7. pgroll [![GitHub stars](https://img.shields.io/github/stars/xataio/pgroll?style=social&color=white)](https://github.com/xataio/pgroll/stargazers)
+## 7. pgroll [![GitHub_Stars](https://img.shields.io/github/stars/xataio/pgroll?style=social&color=white)](https://github.com/xataio/pgroll/stargazers)
 
 [GitHub](https://github.com/xataio/pgroll)
 
@@ -360,7 +360,7 @@ Features:
 
 ---
 
-## 8. Liquibase Community [![GitHub stars](https://img.shields.io/github/stars/liquibase/liquibase?style=social&color=white)](https://github.com/liquibase/liquibase/stargazers)
+## 8. Liquibase Community [![GitHub_Stars](https://img.shields.io/github/stars/liquibase/liquibase?style=social&color=white)](https://github.com/liquibase/liquibase/stargazers)
 
 [GitHub](https://github.com/liquibase/liquibase)
 
@@ -404,7 +404,7 @@ Useful for:
 
 ---
 
-## 9. Phinx [![GitHub stars](https://img.shields.io/github/stars/cakephp/phinx?style=social&color=white)](https://github.com/cakephp/phinx/stargazers)
+## 9. Phinx [![GitHub_Stars](https://img.shields.io/github/stars/cakephp/phinx?style=social&color=white)](https://github.com/cakephp/phinx/stargazers)
 
 [GitHub](https://github.com/cakephp/phinx)
 
@@ -419,7 +419,7 @@ Features:
 
 ---
 
-## 10. sql-migrate [![GitHub stars](https://img.shields.io/github/stars/rubenv/sql-migrate?style=social&color=white)](https://github.com/rubenv/sql-migrate/stargazers)
+## 10. sql-migrate [![GitHub_Stars](https://img.shields.io/github/stars/rubenv/sql-migrate?style=social&color=white)](https://github.com/rubenv/sql-migrate/stargazers)
 
 [GitHub](https://github.com/rubenv/sql-migrate)
 
@@ -434,7 +434,7 @@ Features:
 
 ---
 
-## 11. Sqitch [![GitHub stars](https://img.shields.io/github/stars/sqitchers/sqitch?style=social&color=white)](https://github.com/sqitchers/sqitch/stargazers)
+## 11. Sqitch [![GitHub_Stars](https://img.shields.io/github/stars/sqitchers/sqitch?style=social&color=white)](https://github.com/sqitchers/sqitch/stargazers)
 
 [GitHub](https://github.com/sqitchers/sqitch)
 
@@ -474,7 +474,7 @@ Features:
 
 ---
 
-## 12. node-db-migrate [![GitHub stars](https://img.shields.io/github/stars/db-migrate/node-db-migrate?style=social&color=white)](https://github.com/db-migrate/node-db-migrate/stargazers)
+## 12. node-db-migrate [![GitHub_Stars](https://img.shields.io/github/stars/db-migrate/node-db-migrate?style=social&color=white)](https://github.com/db-migrate/node-db-migrate/stargazers)
 
 [GitHub](https://github.com/db-migrate/node-db-migrate)
 
@@ -489,7 +489,7 @@ Features:
 
 ---
 
-## 13. tern [![GitHub stars](https://img.shields.io/github/stars/jackc/tern?style=social&color=white)](https://github.com/jackc/tern/stargazers)
+## 13. tern [![GitHub_Stars](https://img.shields.io/github/stars/jackc/tern?style=social&color=white)](https://github.com/jackc/tern/stargazers)
 
 [GitHub](https://github.com/jackc/tern)
 
@@ -504,7 +504,7 @@ Features:
 
 ---
 
-## 14. Graphile Migrate [![GitHub stars](https://img.shields.io/github/stars/graphile/migrate?style=social&color=white)](https://github.com/graphile/migrate/stargazers)
+## 14. Graphile Migrate [![GitHub_Stars](https://img.shields.io/github/stars/graphile/migrate?style=social&color=white)](https://github.com/graphile/migrate/stargazers)
 
 [GitHub](https://github.com/graphile/migrate)
 
@@ -534,7 +534,7 @@ Useful for:
 
 Declarative schema tools compare your desired schema state with the target database and automatically synthesize required migration DDL, sorted descending by GitHub star count:
 
-## 1. Atlas [![GitHub stars](https://img.shields.io/github/stars/ariga/atlas?style=social&color=white)](https://github.com/ariga/atlas/stargazers)
+## 1. Atlas [![GitHub_Stars](https://img.shields.io/github/stars/ariga/atlas?style=social&color=white)](https://github.com/ariga/atlas/stargazers)
 
 [GitHub](https://github.com/ariga.io/atlas)
 
@@ -572,7 +572,7 @@ Apply
 
 ---
 
-## 2. migra [![GitHub stars](https://img.shields.io/github/stars/djrobstep/migra?style=social&color=white)](https://github.com/djrobstep/migra/stargazers)
+## 2. migra [![GitHub_Stars](https://img.shields.io/github/stars/djrobstep/migra?style=social&color=white)](https://github.com/djrobstep/migra/stargazers)
 
 [GitHub](https://github.com/djrobstep/migra)
 
@@ -614,7 +614,7 @@ Excellent as a building block for custom migration systems.
 
 ---
 
-## 3. Skeema [![GitHub stars](https://img.shields.io/github/stars/skeema/skeema?style=social&color=white)](https://github.com/skeema/skeema/stargazers)
+## 3. Skeema [![GitHub_Stars](https://img.shields.io/github/stars/skeema/skeema?style=social&color=white)](https://github.com/skeema/skeema/stargazers)
 
 [GitHub](https://github.com/skeema/skeema)
 
@@ -640,7 +640,7 @@ Particularly useful for teams managing:
 
 ---
 
-## 4. pgschema [![GitHub stars](https://img.shields.io/github/stars/pgschema/pgschema?style=social&color=white)](https://github.com/pgschema/pgschema/stargazers)
+## 4. pgschema [![GitHub_Stars](https://img.shields.io/github/stars/pgschema/pgschema?style=social&color=white)](https://github.com/pgschema/pgschema/stargazers)
 
 [GitHub](https://github.com/pgschema/pgschema)
 
@@ -664,7 +664,7 @@ Useful for:
 
 ---
 
-## 5. apgdiff [![GitHub stars](https://img.shields.io/github/stars/fordfrog/apgdiff?style=social&color=white)](https://github.com/fordfrog/apgdiff/stargazers)
+## 5. apgdiff [![GitHub_Stars](https://img.shields.io/github/stars/fordfrog/apgdiff?style=social&color=white)](https://github.com/fordfrog/apgdiff/stargazers)
 
 [GitHub](https://github.com/fordfrog/apgdiff)
 
@@ -692,7 +692,7 @@ Useful for:
 
 Many engineering teams manage schemas directly through their application ORM. Here are the leading open-source ORM migration frameworks, sorted descending by GitHub star count:
 
-## 1. Django Migrations [![GitHub stars](https://img.shields.io/github/stars/django/django?style=social&color=white)](https://github.com/django/django/stargazers)
+## 1. Django Migrations [![GitHub_Stars](https://img.shields.io/github/stars/django/django?style=social&color=white)](https://github.com/django/django/stargazers)
 
 [GitHub](https://github.com/django/django)
 
@@ -714,7 +714,7 @@ Django's migration framework provides:
 
 ---
 
-## 2. Rails Active Record Migrations [![GitHub stars](https://img.shields.io/github/stars/rails/rails?style=social&color=white)](https://github.com/rails/rails/stargazers)
+## 2. Rails Active Record Migrations [![GitHub_Stars](https://img.shields.io/github/stars/rails/rails?style=social&color=white)](https://github.com/rails/rails/stargazers)
 
 [GitHub](https://github.com/rails/rails)
 
@@ -724,7 +724,7 @@ A mature migration system integrated directly into Ruby on Rails.
 
 ---
 
-## 3. Prisma Migrate [![GitHub stars](https://img.shields.io/github/stars/prisma/prisma?style=social&color=white)](https://github.com/prisma/prisma/stargazers)
+## 3. Prisma Migrate [![GitHub_Stars](https://img.shields.io/github/stars/prisma/prisma?style=social&color=white)](https://github.com/prisma/prisma/stargazers)
 
 [GitHub](https://github.com/prisma/prisma)
 
@@ -748,7 +748,7 @@ Excellent for:
 
 ---
 
-## 4. GORM [![GitHub stars](https://img.shields.io/github/stars/go-gorm/gorm?style=social&color=white)](https://github.com/go-gorm/gorm/stargazers)
+## 4. GORM [![GitHub_Stars](https://img.shields.io/github/stars/go-gorm/gorm?style=social&color=white)](https://github.com/go-gorm/gorm/stargazers)
 
 [GitHub](https://github.com/go-gorm/gorm)
 
@@ -758,7 +758,7 @@ Go ORM with automatic migration facilities.
 
 ---
 
-## 5. TypeORM [![GitHub stars](https://img.shields.io/github/stars/typeorm/typeorm?style=social&color=white)](https://github.com/typeorm/typeorm/stargazers)
+## 5. TypeORM [![GitHub_Stars](https://img.shields.io/github/stars/typeorm/typeorm?style=social&color=white)](https://github.com/typeorm/typeorm/stargazers)
 
 [GitHub](https://github.com/typeorm/typeorm)
 
@@ -768,7 +768,7 @@ TypeScript/JavaScript ORM with migration generation and execution.
 
 ---
 
-## 6. Drizzle Kit [![GitHub stars](https://img.shields.io/github/stars/drizzle-team/drizzle-orm?style=social&color=white)](https://github.com/drizzle-team/drizzle-orm/stargazers)
+## 6. Drizzle Kit [![GitHub_Stars](https://img.shields.io/github/stars/drizzle-team/drizzle-orm?style=social&color=white)](https://github.com/drizzle-team/drizzle-orm/stargazers)
 
 [GitHub](https://github.com/drizzle-team/drizzle-orm)
 
@@ -796,7 +796,7 @@ Useful for modern:
 
 ---
 
-## 7. Sequelize [![GitHub stars](https://img.shields.io/github/stars/sequelize/sequelize?style=social&color=white)](https://github.com/sequelize/sequelize/stargazers)
+## 7. Sequelize [![GitHub_Stars](https://img.shields.io/github/stars/sequelize/sequelize?style=social&color=white)](https://github.com/sequelize/sequelize/stargazers)
 
 [GitHub](https://github.com/sequelize/sequelize)
 
@@ -806,7 +806,7 @@ Node.js ORM with migration tooling.
 
 ---
 
-## 8. Knex.js [![GitHub stars](https://img.shields.io/github/stars/knex/knex?style=social&color=white)](https://github.com/knex/knex/stargazers)
+## 8. Knex.js [![GitHub_Stars](https://img.shields.io/github/stars/knex/knex?style=social&color=white)](https://github.com/knex/knex/stargazers)
 
 [GitHub](https://github.com/knex/knex)
 
@@ -816,7 +816,7 @@ Node.js SQL query builder with migration support.
 
 ---
 
-## 9. Ent [![GitHub stars](https://img.shields.io/github/stars/ent/ent?style=social&color=white)](https://github.com/ent/ent/stargazers)
+## 9. Ent [![GitHub_Stars](https://img.shields.io/github/stars/ent/ent?style=social&color=white)](https://github.com/ent/ent/stargazers)
 
 [GitHub](https://github.com/ent/ent)
 
@@ -826,7 +826,7 @@ Go entity framework with schema-driven development and migration capabilities.
 
 ---
 
-## 10. Diesel [![GitHub stars](https://img.shields.io/github/stars/diesel-rs/diesel?style=social&color=white)](https://github.com/diesel-rs/diesel/stargazers)
+## 10. Diesel [![GitHub_Stars](https://img.shields.io/github/stars/diesel-rs/diesel?style=social&color=white)](https://github.com/diesel-rs/diesel/stargazers)
 
 [GitHub](https://github.com/diesel-rs/diesel)
 
@@ -836,7 +836,7 @@ Rust ORM/query builder with migration support.
 
 ---
 
-## 11. SeaORM [![GitHub stars](https://img.shields.io/github/stars/SeaQL/sea-orm?style=social&color=white)](https://github.com/SeaQL/sea-orm/stargazers)
+## 11. SeaORM [![GitHub_Stars](https://img.shields.io/github/stars/SeaQL/sea-orm?style=social&color=white)](https://github.com/SeaQL/sea-orm/stargazers)
 
 [GitHub](https://github.com/SeaQL/sea-orm)
 
@@ -846,7 +846,7 @@ Rust ORM with migration tooling.
 
 ---
 
-## 12. Alembic [![GitHub stars](https://img.shields.io/github/stars/sqlalchemy/alembic?style=social&color=white)](https://github.com/sqlalchemy/alembic/stargazers)
+## 12. Alembic [![GitHub_Stars](https://img.shields.io/github/stars/sqlalchemy/alembic?style=social&color=white)](https://github.com/sqlalchemy/alembic/stargazers)
 
 [GitHub](https://github.com/sqlalchemy/alembic)
 
@@ -876,7 +876,7 @@ Strong for:
 
 ---
 
-## 13. Ecto SQL Sandbox / Ecto Migrations [![GitHub stars](https://img.shields.io/github/stars/elixir-ecto/ecto?style=social&color=white)](https://github.com/elixir-ecto/ecto/stargazers)
+## 13. Ecto SQL Sandbox / Ecto Migrations [![GitHub_Stars](https://img.shields.io/github/stars/elixir-ecto/ecto?style=social&color=white)](https://github.com/elixir-ecto/ecto/stargazers)
 
 [GitHub](https://github.com/elixir-ecto/ecto_sql)
 
@@ -922,7 +922,7 @@ Excellent for Elixir applications.
 
 Traditional `ALTER TABLE` operations on massive tables can cause exclusive table locks, application timeouts, and service outages. These open-source tools perform online schema changes safely in place, sorted descending by GitHub star count:
 
-## 1. gh-ost [![GitHub stars](https://img.shields.io/github/stars/github/gh-ost?style=social&color=white)](https://github.com/github/gh-ost/stargazers)
+## 1. gh-ost [![GitHub_Stars](https://img.shields.io/github/stars/github/gh-ost?style=social&color=white)](https://github.com/github/gh-ost/stargazers)
 
 [GitHub](https://github.com/github/gh-ost)
 
@@ -946,7 +946,7 @@ Useful for:
 
 ---
 
-## 2. pgroll [![GitHub stars](https://img.shields.io/github/stars/xataio/pgroll?style=social&color=white)](https://github.com/xataio/pgroll/stargazers)
+## 2. pgroll [![GitHub_Stars](https://img.shields.io/github/stars/xataio/pgroll?style=social&color=white)](https://github.com/xataio/pgroll/stargazers)
 
 [GitHub](https://github.com/xataio/pgroll)
 
@@ -992,7 +992,7 @@ New Schema
 
 ---
 
-## 3. pg_repack [![GitHub stars](https://img.shields.io/github/stars/reorg/pg_repack?style=social&color=white)](https://github.com/reorg/pg_repack/stargazers)
+## 3. pg_repack [![GitHub_Stars](https://img.shields.io/github/stars/reorg/pg_repack?style=social&color=white)](https://github.com/reorg/pg_repack/stargazers)
 
 [GitHub](https://github.com/reorg/pg_repack)
 
@@ -1002,7 +1002,7 @@ PostgreSQL maintenance utility useful for rebuilding tables and indexes with red
 
 ---
 
-## 4. Reshape [![GitHub stars](https://img.shields.io/github/stars/fabianlindfors/reshape?style=social&color=white)](https://github.com/fabianlindfors/reshape/stargazers)
+## 4. Reshape [![GitHub_Stars](https://img.shields.io/github/stars/fabianlindfors/reshape?style=social&color=white)](https://github.com/fabianlindfors/reshape/stargazers)
 
 [GitHub](https://github.com/fabianlindfors/reshape)
 
@@ -1024,7 +1024,7 @@ Useful for:
 
 ---
 
-## 5. pt-online-schema-change [![GitHub stars](https://img.shields.io/github/stars/percona/percona-toolkit?style=social&color=white)](https://github.com/percona/percona-toolkit/stargazers)
+## 5. pt-online-schema-change [![GitHub_Stars](https://img.shields.io/github/stars/percona/percona-toolkit?style=social&color=white)](https://github.com/percona/percona-toolkit/stargazers)
 
 [GitHub](https://github.com/percona/percona-toolkit)
 
@@ -1038,7 +1038,7 @@ Percona Toolkit provides online schema-change functionality for MySQL-compatible
 
 Database branching creates copy-on-write, instant, isolated clones of databases for preview environments, PR testing, and migration verification, sorted descending by GitHub star count:
 
-## 1. Supabase [![GitHub stars](https://img.shields.io/github/stars/supabase/supabase?style=social&color=white)](https://github.com/supabase/supabase/stargazers)
+## 1. Supabase [![GitHub_Stars](https://img.shields.io/github/stars/supabase/supabase?style=social&color=white)](https://github.com/supabase/supabase/stargazers)
 
 [GitHub](https://github.com/supabase/supabase)
 
@@ -1051,7 +1051,7 @@ Key capabilities:
 
 ---
 
-## 2. Dolt [![GitHub stars](https://img.shields.io/github/stars/dolthub/dolt?style=social&color=white)](https://github.com/dolthub/dolt/stargazers)
+## 2. Dolt [![GitHub_Stars](https://img.shields.io/github/stars/dolthub/dolt?style=social&color=white)](https://github.com/dolthub/dolt/stargazers)
 
 [GitHub](https://github.com/dolthub/dolt)
 
@@ -1095,7 +1095,7 @@ Hosted infrastructure around Dolt databases.
 
 ---
 
-## 4. Neon [![GitHub stars](https://img.shields.io/github/stars/neondatabase/neon?style=social&color=white)](https://github.com/neondatabase/neon/stargazers)
+## 4. Neon [![GitHub_Stars](https://img.shields.io/github/stars/neondatabase/neon?style=social&color=white)](https://github.com/neondatabase/neon/stargazers)
 
 [GitHub](https://github.com/neondatabase/neon)
 
@@ -1121,7 +1121,7 @@ Useful for:
 
 ---
 
-## 5. Vitess [![GitHub stars](https://img.shields.io/github/stars/vitessio/vitess?style=social&color=white)](https://github.com/vitessio/vitess/stargazers)
+## 5. Vitess [![GitHub_Stars](https://img.shields.io/github/stars/vitessio/vitess?style=social&color=white)](https://github.com/vitessio/vitess/stargazers)
 
 [GitHub](https://github.com/vitessio/vitess)
 
